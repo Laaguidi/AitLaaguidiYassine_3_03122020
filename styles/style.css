@@ -118,16 +118,22 @@ header .logo-cont .logo {
 
 /* fonctionnememnt */
 
+#fonctionnement {
+  width: 100%;
+  height: 509px;
+  background: lightgrey;
+}
+
 #fonctionnement h2 {
-  margin-top: 58px;
-  margin-left: 15px;
+  padding-top: 56px;
+  padding-left: 18px;
 }
 
 #fonctionnement  .restaurant1 {
   text-decoration: none;
   display: flex;
   justify-content: center;
-  padding-top: 36px;
+  padding-top: 32px;
 }
 
 #fonctionnement .find-restaurant {
@@ -145,9 +151,9 @@ header .logo-cont .logo {
 
 #fonctionnement .find-restaurant .numero {
   background: #9356DC;
-  width: 2.3rem;
-  height: 2.3rem;
-  font-size: 1.44rem;
+  width: 2.2rem;
+  height: 2.2rem;
+  font-size: 1.34rem;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -164,7 +170,24 @@ header .logo-cont .logo {
   padding-left: 14px;
 }
 
+#icon-degustez {
+  color: #9356DC;
+}
+
 #fonctionnement .find-restaurant h4 {
   color: black;
   padding-right: 18px;
+}
+
+/* restaurant */
+
+#restaurants-section {
+  width: 100%;
+  height: 629px;
+  background: burlywood;
+}
+
+#restaurants-section h2 {
+  padding-left: 18px;
+  padding-top: 64px;
 }
