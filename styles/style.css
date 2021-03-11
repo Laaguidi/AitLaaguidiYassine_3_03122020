@@ -6,6 +6,11 @@
   padding: 0;
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
 main {
   height: 100vh;
 }
@@ -15,13 +20,20 @@ h2 {
   font-size: 1.6rem;
 }
 
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2em;
+}
+
 h4 {
   font-family: 'Roboto', sans-serif;
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 p {
   font-family: 'Roboto', sans-serif;
+  color: #7D7D7D;
+  font-size: 1.1em;
 }
 
 /* header */
@@ -60,7 +72,7 @@ header .logo-cont .logo {
   color: #353535;
 }
 
-.paris-belle-ville {
+ #reservation  .paris-belleville {
   color: #353535;
   font-weight: bold;
 }
@@ -116,12 +128,12 @@ header .logo-cont .logo {
   background-image: linear-gradient(to left top, #c767db, #d16adb, #db6ddb, #e470da, #ed73da);
 }
 
-/* fonctionnememnt */
+/** fonctionnememnt **/
 
 #fonctionnement {
   width: 100%;
   height: 509px;
-  background: lightgrey;
+  /* background: lightgrey; */
 }
 
 #fonctionnement h2 {
@@ -165,7 +177,7 @@ header .logo-cont .logo {
 }
 
 #fonctionnement .find-restaurant .mobile-icon {
-  font-size: 1.62em;
+  font-size: 1.24em;
   color: #7E7E7E;
   padding-left: 14px;
 }
@@ -179,15 +191,162 @@ header .logo-cont .logo {
   padding-right: 18px;
 }
 
-/* restaurant */
+/** restaurant **/
 
 #restaurants-section {
   width: 100%;
-  height: 629px;
-  background: burlywood;
+  height: 1255px;
+  background: #F6F6F6;
 }
 
 #restaurants-section h2 {
   padding-left: 18px;
-  padding-top: 64px;
+  padding-top: 61px;
 }
+
+#restaurants-section .all-cards {
+  padding-top: 28px;
+}
+
+#la-palette-du-gout {
+  background-image: url('../images/la-palette-du-gout.jpg');
+}
+
+#la-note{
+  background-image: url('../images/la-note-enchante.jpg');
+}
+
+#ala-francaise{
+  background-image: url('../images/ala-francaise.jpg');
+}
+
+#delice-des-senses{
+  background-image: url('../images/delice-des-senses.jpg');
+}
+
+#restaurants-section .all-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: flex-start; */
+  
+}
+
+#restaurants-section  .card {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 15px;
+  height: 253px;
+  width: 20.5rem;
+  box-shadow: 3px 3px 8px 4px rgb(233 231 231);
+  margin-bottom: 5vw;
+}
+
+#restaurants-section  .card a {
+  text-decoration: none;
+  color: black;
+}
+
+#restaurants-section .all-cards .card .image {
+  width: 100%;
+  height: 176px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border-radius: 1rem 1rem 0 0;
+}
+
+#restaurants-section .all-cards .card .description {
+  padding: 18px;
+  line-height: 24px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+#restaurants-section .heart-icon {
+  position: absolute;
+  top: 23px;
+  right: 17px;
+}
+
+#restaurants-section .card-nouveau {
+  width: 77px;
+  height: 29px;
+  color: #278870;
+  background: #99E2D0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 9px;
+  top: 15px;
+}
+
+/** footer **/
+
+#footer {
+  background: #353535;
+  height: 215px;   /*196px */
+}
+
+#footer .container {
+  padding: 1.4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#footer .container .logo {
+  color: white;
+  font-size: 1.25rem;
+  font-family: shrikhand, "cursive";
+  margin: 0 0 1rem;
+}
+
+#footer .container .footer-list {
+  list-style-type: none;
+  font-size: 0.9em;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5em;
+  /* justify-content: flex-start; */
+}
+
+#footer .container .footer-list li {
+  margin: .3rem 0;
+}
+
+#footer .container .footer-list li a {
+  display: flex;
+  align-items: center;
+}
+
+#footer .container .footer-list li a .footer-icon {
+  color: white;
+  margin-right: 0.75rem;
+}
+
+#footer .container .footer-list li a p {
+  color: white;
+  font-size: 1.1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
