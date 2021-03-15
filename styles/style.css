@@ -38,7 +38,7 @@ p {
 
 /* header */
 
-header {
+.header {
   /* background: lightgrey; */
   width: 100%;
   height: 8vh;
@@ -47,9 +47,9 @@ header {
   align-items: center;
 }
 
-header .logo-cont .logo {
-  line-height: 3rem;
-  font-size: 1.37em;
+.header .logo {
+  font-family: 'Shrikhand', cursive;
+  font-size: 1.89em;
   display: flex;
   align-items: center;
 }
@@ -132,8 +132,8 @@ header .logo-cont .logo {
 
 #fonctionnement {
   width: 100%;
-  height: 509px;
-  /* background: lightgrey; */
+  height: auto;
+  /* height: 509px; */
 }
 
 #fonctionnement h2 {
@@ -197,6 +197,7 @@ header .logo-cont .logo {
   width: 100%;
   height: 1255px;
   background: #F6F6F6;
+  margin-top: 73px;
 }
 
 #restaurants-section h2 {

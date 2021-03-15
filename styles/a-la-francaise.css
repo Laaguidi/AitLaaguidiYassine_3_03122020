@@ -1,0 +1,108 @@
+/* bases */
+
+*,::before,::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+  }
+
+  main {
+    height: 100vh;
+  }
+
+  h3 {
+    border-bottom: 3px solid #99E2D0;
+    width: 1.25rem;
+    color: #8B8B8B;
+    font-weight: 200;
+  }
+
+  /* header */
+
+  header {
+    background: grey; 
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .titre{
+    font-family: 'Shrikhand', cursive;
+    font-size: 1.89em; 
+  }
+
+  header .arrow {
+    position: absolute;
+    left: 22px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  /* menu container */
+
+  #ala-francaise {
+    background-image: url('../images/ala-francaise.jpg');
+    width: 100%;
+    height: 245px;
+    background-size: cover;
+    background-position-x: center;
+  }
+
+  .image {
+    max-width: 100%;
+    max-height: 32rem;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+  }
+
+  .menu-container {
+    background: #F6F6F6;
+    width: 100%;
+    height: 453px;
+    position: absolute;
+    top: 255px;
+    border-radius: 47px 47px 0 0;
+
+  }
+
+  .menu-container .title-like {
+   font-family: 'Shrikhand', cursive;
+   font-size: 1.2rem;
+   padding-top: 40px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.menu-container .title-like .resto-title {
+  position: absolute;
+  left: 20px;
+}
+
+.menu-container .title-like .like-icon {
+  position: absolute;
+  right: 1.93em;
+}
+
+.menu-container .title-like .like-icon .far {
+  font-size: 1.53em;
+}
+  
+.plat {
+    padding-top: 2.75em;
+    padding-left: 1.25em;
+}
+
+ /* .plat .titre-plat {
+   border-bottom: 3px solid #99E2D0;
+   width: 2.5rem;
+   color: #8B8B8B;
+ } */
