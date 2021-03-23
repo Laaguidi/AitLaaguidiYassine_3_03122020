@@ -12,7 +12,7 @@ body {
 }
 
 main {
-  height: 100vh;
+  height: auto;
 }
 
 h2 {
@@ -48,8 +48,7 @@ p {
 }
 
 .header .logo {
-  font-family: 'Shrikhand', cursive;
-  font-size: 1.89em;
+  font-size: 1.89em; 
   display: flex;
   align-items: center;
 }
@@ -125,7 +124,9 @@ p {
   /* background: #C767DB; */
   padding: 17px 25px;
   border-radius: 35px;
-  background-image: linear-gradient(to left top, #c767db, #d16adb, #db6ddb, #e470da, #ed73da);
+  /* background-image: linear-gradient(to left top, #c767db, #d16adb, #db6ddb, #e470da, #ed73da); */
+  background: linear-gradient(to top left, #9356DC, #FF79DA)
+
 }
 
 /** fonctionnememnt **/
@@ -230,7 +231,6 @@ p {
   flex-direction: column;
   align-items: center;
   /* justify-content: flex-start; */
-  
 }
 
 #restaurants-section  .card {
