@@ -320,6 +320,7 @@ p {
 #footer .container .footer-list li a {
   display: flex;
   align-items: center;
+  text-decoration: none;
 }
 
 #footer .container .footer-list li a .footer-icon {
