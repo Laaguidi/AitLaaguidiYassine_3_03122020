@@ -37,7 +37,7 @@ p {
 
 /* header */
 .header {
-  background: white;
+  background: #8b6d6d;
   width: 100%;
   height: 8vh;
   display: flex;
@@ -435,10 +435,6 @@ p {
 .menus .menus__all .menus__all__card .menus__all__card__description {
   width: 100%;
 }
-.menus .menus__all .menus__all__card .menus__all__card__description a {
-  text-decoration: none;
-  color: black;
-}
 .menus .menus__all .menus__all__card .menus__all__card__description p {
   font-size: 1rem;
   color: #7D7D7D;
@@ -580,10 +576,6 @@ p {
 }
 .menus .menus__all .menus__all__card .menus__all__card__description {
   width: 100%;
-}
-.menus .menus__all .menus__all__card .menus__all__card__description a {
-  text-decoration: none;
-  color: black;
 }
 .menus .menus__all .menus__all__card .menus__all__card__description p {
   font-size: 1rem;
@@ -731,10 +723,6 @@ p {
 .menus .menus__all .menus__all__card .menus__all__card__description {
   width: 100%;
 }
-.menus .menus__all .menus__all__card .menus__all__card__description a {
-  text-decoration: none;
-  color: black;
-}
 .menus .menus__all .menus__all__card .menus__all__card__description p {
   font-size: 1rem;
   color: #7D7D7D;
@@ -742,6 +730,11 @@ p {
 .menus .menus__all .menus__all__card .menus__all__card__prix {
   font-weight: bold;
   padding-top: 1.12em;
+}
+.menus .menus__all .menus__all__card .menus__all__card__prix--active {
+  position: relative;
+  top: 38px;
+  font-weight: bold;
 }
 
 /* commande btn */
@@ -821,10 +814,12 @@ p {
 .menu {
   background: #F6F6F6;
   width: 100%;
-  height: 1185px;
+  height: auto;
+  /*1185px */
   position: relative;
   border-radius: 47px 47px 0 0;
   margin-top: -42px;
+  padding-bottom: 80px;
 }
 .menu .menu__header {
   font-family: "Shrikhand", cursive;
@@ -877,10 +872,6 @@ p {
 }
 .menus .menus__all .menus__all__card .menus__all__card__description {
   width: 100%;
-}
-.menus .menus__all .menus__all__card .menus__all__card__description a {
-  text-decoration: none;
-  color: black;
 }
 .menus .menus__all .menus__all__card .menus__all__card__description p {
   font-size: 1rem;

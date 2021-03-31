@@ -95,11 +95,6 @@
           .menus__all__card__description {
             width: 100%;
 
-             a {
-              text-decoration: none;
-              color: black;
-             }
-
              p {
               font-size: 1rem;
               color: #7D7D7D;
@@ -109,6 +104,12 @@
           .menus__all__card__prix {
             font-weight: bold;
             padding-top: 1.12em;
+          }
+
+          .menus__all__card__prix--active {
+            position: relative;
+            top: 38px;
+            font-weight: bold;
           }
       } 
     }
