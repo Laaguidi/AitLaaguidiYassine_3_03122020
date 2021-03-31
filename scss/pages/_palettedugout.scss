@@ -74,6 +74,10 @@
 
     .menus__all {
       padding: 0 10px;
+      @media screen and (min-width: 860px) {
+        display: flex;
+        justify-content: space-around;
+      }
 
        .menus__all__title {
         margin-left: 4px;
@@ -93,6 +97,10 @@
         display: flex;
         box-shadow: 5px 5px 5px rgb(233, 231, 231);
         justify-content: space-between;
+
+        @media screen and (min-width: 860px) {
+          width: 42vw;
+        }
 
           .menus__all__card__description {
             width: 100%;

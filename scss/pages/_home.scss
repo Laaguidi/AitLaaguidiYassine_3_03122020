@@ -171,15 +171,6 @@
             }
   }
 
-  // @media screen and (min-width: 550px) {
-  //   padding: 10px 20px;
-  // }
-
-  // @media screen and (min-width: 1024px) {
-  //   padding: 10px 55px;
-  // }
-
- 
 }
 
 
@@ -188,9 +179,10 @@
 
 .restaurants {
   width: 100%;
-  height: 1255px;
+  height: auto; /* 1255px*/
   background: #F6F6F6;
   margin-top: 73px;
+  padding-bottom: 60px;
 
    .restaurants__title {
     padding-left: 18px;
@@ -217,9 +209,9 @@
       background: white;
       border-radius: 15px;
       height: auto;  /* 253px */
-      // width: 20.5rem;
       box-shadow: 3px 3px 8px 4px rgb(233 231 231);
       margin-bottom: 3vw;
+     
 
       a {
         text-decoration: none;
@@ -237,7 +229,6 @@
           background-position: center;
           border-radius: 1rem 1rem 0 0;
           object-fit: cover;
-          // background: url(#{$la-palette-du-gout});
           }
           
           .restaurants__cardnew {
@@ -276,9 +267,9 @@
             //  width: 43vw;
             //  margin: 30px;
            }  
-           @media screen and (min-width: 1038px) {
-             margin: 10px;
-           } 
+          //  @media screen and (min-width: 1038px) {
+          //    margin: 10px;
+          //  } 
      }
      // all cards
      @media screen and (min-width: 550px) {
@@ -286,17 +277,12 @@
       justify-content: center;
       flex-flow: wrap;
     }
-    @media screen and (min-width: 1180px) {
-      margin: 0 70px;
-    }
+    
    }
-   //restaurants
-  //  @media screen and (max-width: 550px) {
-  //    height: 1267px;
-  //  }
-  @media screen and (min-width: 1077px) {
-    max-height: 735px;
-  }
+  
+  // @media screen and (min-width: 1077px) {
+  //   max-height: 735px;
+  // }
   
 }
 // footer 
