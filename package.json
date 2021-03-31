@@ -1,0 +1,19 @@
+{
+  "name": "projet-3-ohmyfood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./scss/style.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Laaguidi/AitLaaguidiYassine_3_03122020.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Laaguidi/AitLaaguidiYassine_3_03122020/issues"
+  },
+  "homepage": "https://github.com/Laaguidi/AitLaaguidiYassine_3_03122020#readme"
+}

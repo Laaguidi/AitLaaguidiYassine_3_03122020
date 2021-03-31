@@ -1,0 +1,171 @@
+  /* header */
+
+  .header {
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      color: black;
+
+      .header__arrow {
+        position: absolute;
+        left: 22px;
+        font-size: 20px;
+        top: 20px;
+      }
+    }
+  }  
+
+  .img__restaurant {
+    background-image: url('../images/ala-francaise.jpg');
+    width: 100%;
+    height: 245px;
+    background-size: cover;
+    background-position-x: center;
+  }
+
+  /* container header */
+
+  .menu {
+    background: #F6F6F6;
+    width: 100%;
+    height: 1185px;  
+    position: relative;
+    border-radius: 47px 47px 0 0;
+    margin-top: -42px;
+
+    .menu__header {
+      font-family: 'Shrikhand', cursive;
+      font-size: 1.2rem;
+      padding-top: 40px; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      h2 {
+        position: absolute;
+        left: 20px; 
+        font-family: 'shrikhand', cursive;
+      }
+
+      .menu__icon {
+        position: absolute;
+        right: 1.93em;
+
+         .far {
+          font-size: 1.53em;
+         }
+      }
+    }
+  }
+
+  /* menu */
+
+  .menus {
+    padding-top: 2.75em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .menus__all {
+      padding: 0 10px;
+
+       .menus__all__title {
+        margin-left: 4px;
+        margin-bottom: 23px;
+        border-bottom: 3px solid #99E2D0;
+        color: #8B8B8B;
+        width: 2.5rem;
+        position: relative;
+        padding-top: 16px;
+       }
+
+      .menus__all__card {
+        background: #fff;
+        border-radius: 15px;
+        padding: 12px;
+        margin: 20px 0;
+        display: flex;
+        box-shadow: 5px 5px 5px rgb(233, 231, 231);
+        justify-content: space-between;
+
+          .menus__all__card__description {
+            width: 100%;
+
+             a {
+              text-decoration: none;
+              color: black;
+             }
+
+             p {
+              font-size: 1rem;
+              color: #7D7D7D;
+             }
+          }
+
+          .menus__all__card__prix {
+            font-weight: bold;
+            padding-top: 1.12em;
+          }
+      } 
+    }
+  }
+
+   /* commande btn */
+
+   .commande__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+    p {
+      margin-top: 32px;
+      font-family: 'roboto', sans-serif;
+      cursor: pointer;
+      font-size: 1rem;
+      color: white;
+      padding: 17px 51px;
+      border-radius: 35px;
+      background: linear-gradient(to top left, #9356DC, #FF79DA)
+    }
+   }
+
+   /* footer */
+
+  .footer {
+    background: #353535;
+    height: 215px;
+
+    .footer__container {
+      padding: 1.4em;
+      display: flex;
+      flex-direction: column;
+
+      .footer__logo {
+        color: white;
+        font-size: 1.25rem;
+        font-family: shrikhand, "cursive";
+        margin: 0 0 1rem;
+      }
+
+      .footer__list {
+        font-size: 0.9em;
+        display: flex;
+        flex-direction: column;
+        line-height: 1.5em;
+        list-style-type: none;
+
+        .footer__icon {
+          color: white;
+          margin-right: 0.75rem;
+        }
+      }
+    }
+  }
+  
+
+  
