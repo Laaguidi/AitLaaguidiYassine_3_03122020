@@ -41,21 +41,35 @@
   
   .explore__reservez {
     color: black;
-    line-height: 32px;
-    
+    line-height: 30px;
+    @media screen and (min-width: 660px) {
+      display: none;
+    }
+
+   
     .explore__vsconvient {
       display: flex;
       justify-content: center;
          }
          @media screen and (min-width: 550px) {
-           font-size: 32px;
+           font-size: 30px;
          }
      }
+     .explore__reservez__titre__responsive {
+      display: none;
+      @media screen and (min-width: 660px) {
+        display: flex;
+        justify-content: center;
+        font-size: 32px;
+      }
+    }
+    
       
      p {
         color: #7D7D7D;
         font-size: 1.1em;
         margin-top: 10px;
+       
         
         .explore__selectionne {
           display: flex;
@@ -65,6 +79,14 @@
             font-size: 22px;
           }
       }
+      // .explore__reservez__p__responsive {
+      //   display: none;
+      // }
+      // @media screen and (min-width: 660px) {
+      //   display: flex;
+      //   justify-content: center;
+     
+      // }
 
         .explore__btn {
           margin-top: 32px;
