@@ -97,6 +97,11 @@
         display: flex;
         box-shadow: 5px 5px 5px rgb(233, 231, 231);
         justify-content: space-between;
+        animation: apparition .5s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+        transform: scale(0);
+        max-width: 100%;
 
         @media screen and (min-width: 860px) {
           width: 42vw;
@@ -116,6 +121,19 @@
             padding-top: 1.12em;
             color: black;
             text-decoration: none;
+          }
+          @keyframes apparition {
+            0% {
+            transform: scale(0);
+            opacity: 0;
+            }
+            50% {
+              opacity: 0%;
+            }
+            100% {
+              transform: scale(1);
+              opacity: 100%;
+            }
           }
       } 
     }
