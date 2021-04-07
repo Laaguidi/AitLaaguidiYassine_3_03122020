@@ -91,6 +91,7 @@
         display: flex;
         box-shadow: 5px 5px 5px rgb(233, 231, 231);
         justify-content: space-between;
+        animation: 750ms ease 200ms 1 normal both running apparition;
 
           .menus__all__card__description {
             width: 100%;
@@ -110,6 +111,16 @@
             position: relative;
             top: 38px;
             font-weight: bold;
+          }
+          @keyframes apparition {
+            0% {
+              transform: translateY(30px);
+              opacity: 0;
+            }
+            100% {
+              transform: translateY(0px);
+              opacity: 1;
+            }
           }
       } 
     }

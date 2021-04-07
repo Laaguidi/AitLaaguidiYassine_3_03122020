@@ -97,11 +97,12 @@
         display: flex;
         box-shadow: 5px 5px 5px rgb(233, 231, 231);
         justify-content: space-between;
-        animation: apparition .5s;
-        animation-timing-function: ease-in-out;
-        animation-fill-mode: forwards;
-        transform: scale(0);
-        max-width: 100%;
+        // animation: apparition .5s;
+        // animation-timing-function: ease-in-out;
+        // animation-fill-mode: forwards;
+        // transform: scale(0);
+        // max-width: 100%;
+        animation: 750ms ease 200ms 1 normal both running apparition;
 
         @media screen and (min-width: 860px) {
           width: 42vw;
@@ -122,17 +123,58 @@
             color: black;
             text-decoration: none;
           }
-          @keyframes apparition {
-            0% {
-            transform: scale(0);
-            opacity: 0;
+          .menus__all__card__check {
+            align-items: center;
+            background-color: #99E2D0;
+            display: flex;
+            justify-content: center;
+            margin: -16px -120px -16px 16px;
+            transition-duration: .5s;
+            width: 104px;
+            animation: check;
+            .menus__all__card__check--icon {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background-color: white;
+              border-radius: 100px;
+              color: #99E2D0;
+              height: 25px;
+              transform: rotate(180deg);
+              transition-duration: .8s;
+              width: 25px;
             }
-            50% {
-              opacity: 0%;
+            @keyframes check {
+              0% {
+                width: 0;
+                opacity: 0;
+              }
+              100% {
+                width: 65px;
+                opacity: 1;
+              }
+            }
+           
+          }
+          @keyframes apparition {
+            // 0% {
+            // transform: scale(0);
+            // opacity: 0;
+            // }
+            // 50% {
+            //   opacity: 0%;
+            // }
+            // 100% {
+            //   transform: scale(1);
+            //   opacity: 100%;
+            // }
+            0% {
+              transform: translateY(30px);
+              opacity: 0;
             }
             100% {
-              transform: scale(1);
-              opacity: 100%;
+              transform: translateY(0px);
+              opacity: 1;
             }
           }
       } 

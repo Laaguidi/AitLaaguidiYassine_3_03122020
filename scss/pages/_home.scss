@@ -28,12 +28,15 @@
     }
     .loader__item--1 {
       background-color: blue;
+      transform: translateY(0.3s);
     }
     .loader__item--2 {
       background-color: greenyellow;
+      transform: translateY(0.6s);
     }
     .loader__item--3 {
       background-color: hotpink;
+      transform: translateY(1s);
     }
   
   }
@@ -184,6 +187,7 @@
     @include simpleFlex();
     padding-top: 32px;
     // max-width: 450px; 
+   
     @media screen and (min-width: 550px) {
       font-size: 20px;
     }
@@ -198,6 +202,9 @@
       border-radius: 20px;
       box-shadow: 6px 7px 8px rgb(233 231 231);
       position: relative;
+    //  :hover {
+    //     background: #7952a8;
+    //   } 
 
       .fonctionnement__numero {
         background: $numbers;
@@ -222,14 +229,15 @@
           color: black;
           padding-right: 18px;
         }
-    }
-           .active {
-             background: #F5EDFF;
-            
-             .store {
-              color: $store;
-              }
-            }
+        
+  }
+      .active {
+         background: #F5EDFF;
+   
+         .store {
+           color: $store;
+         }
+       }
             // fonctionnement choice
             @media screen and (min-width: 550px) {
              margin: 20px 20px;
