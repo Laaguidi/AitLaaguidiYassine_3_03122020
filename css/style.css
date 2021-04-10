@@ -57,38 +57,34 @@ p {
 }
 .loader .loader__itemcontainer .loader__item {
   animation-iteration-count: 1;
-  animation: jump 1s;
+  animation: loader 0.6s;
   width: 40px;
   height: 40px;
   border-radius: 40px;
 }
 .loader .loader__itemcontainer .loader__item--1 {
-  background-color: blue;
-  transform: translateY(0.3s);
+  background-color: #9356DC;
 }
 .loader .loader__itemcontainer .loader__item--2 {
-  background-color: greenyellow;
-  transform: translateY(0.6s);
+  background-color: #FF79DA;
+  animation-delay: 0.1s;
 }
 .loader .loader__itemcontainer .loader__item--3 {
-  background-color: hotpink;
-  transform: translateY(1s);
+  background-color: #99E2D0;
+  animation-delay: 0.2s;
 }
 @keyframes loader {
   0% {
     transform: translateY(0);
   }
   25% {
-    transform: translateY(15px);
-    /* 0.5rem */
+    transform: translateY(0.5rem);
   }
   75% {
     transform: translateY(-0.5rem);
-    /* -0.5rem*/
   }
   100% {
     transform: translateY(0rem);
-    /*  0rem */
     opacity: 0;
     z-index: -10;
   }
@@ -357,6 +353,26 @@ p {
   top: 18px;
   right: 17px;
   font-size: 1.37em;
+}
+.restaurants .restaurants__allcards .restaurants__card .restaurants__description .restaurants__hearticon :hover {
+  background: linear-gradient(to top left, #9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  animation: opacity_heart 0.8s both;
+}
+@keyframes opacity_heart {
+  0% {
+    transform: scale(1);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 @media screen and (min-width: 550px) {
   .restaurants .restaurants__allcards .restaurants__card {
@@ -933,8 +949,28 @@ p {
   position: absolute;
   right: 1.93em;
 }
-.menu .menu__header .menu__icon .far {
+.menu .menu__header .menu__icon i {
   font-size: 1.53em;
+}
+.menu .menu__header .menu__icon i:hover {
+  background: linear-gradient(to top left, #9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  animation: opacity_heart 0.8s both;
+}
+@keyframes opacity_heart {
+  0% {
+    transform: scale(1);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 /* menu */
@@ -970,7 +1006,11 @@ p {
   display: flex;
   box-shadow: 5px 5px 5px #e9e7e7;
   justify-content: space-between;
-  animation: 750ms ease 200ms 1 normal both running apparition;
+  animation: apparition 0.5s linear;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  max-width: 100%;
+  overflow: hidden;
 }
 @media screen and (min-width: 860px) {
   .menus .menus__all .menus__all__card {
@@ -1018,18 +1058,43 @@ p {
     opacity: 0;
   }
   100% {
-    width: 65px;
+    width: 60px;
     opacity: 1;
   }
 }
+.menus .menus__all .menus__all__card .menus__all__plats .menus__all__card:nth-child(2) {
+  animation-delay: 0.1s;
+  background: greenyellow;
+}
+.menus .menus__all .menus__all__card .menus__all__card:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.menus .menus__all .menus__all__card .menus__all__card:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.menus .menus__all .menus__all__card .menus__all__card:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.menus .menus__all .menus__all__card .menus__all__card:nth-child(6) {
+  animation-delay: 0.5s;
+}
+.menus .menus__all .menus__all__card .menus__all__card:nth-child(7) {
+  animation-delay: 0.6s;
+}
+.menus .menus__all .menus__all__card .menus__all__card:nth-child(8) {
+  animation-delay: 0.7s;
+}
 @keyframes apparition {
   0% {
-    transform: translateY(30px);
+    transform: scale(0);
     opacity: 0;
   }
+  50% {
+    opacity: 0%;
+  }
   100% {
-    transform: translateY(0px);
-    opacity: 1;
+    transform: scale(1);
+    opacity: 100%;
   }
 }
 

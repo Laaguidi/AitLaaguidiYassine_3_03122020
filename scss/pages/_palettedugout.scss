@@ -57,8 +57,28 @@
         position: absolute;
         right: 1.93em;
 
-         .far {
+         i {
           font-size: 1.53em;
+          &:hover {
+             background: linear-gradient(to top left, #9356DC, #FF79DA);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+            animation: opacity_heart 0.8s both;
+          }
+          @keyframes opacity_heart{
+            0%{
+                transform: scale(1);
+                opacity: 0;
+            }
+            50%{
+                transform: scale(0);
+            }
+            100%{
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
          }
       }
     }
@@ -97,12 +117,17 @@
         display: flex;
         box-shadow: 5px 5px 5px rgb(233, 231, 231);
         justify-content: space-between;
-        // animation: apparition .5s;
-        // animation-timing-function: ease-in-out;
-        // animation-fill-mode: forwards;
-        // transform: scale(0);
-        // max-width: 100%;
-        animation: 750ms ease 200ms 1 normal both running apparition;
+        animation: apparition .5s linear;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+        //transform: scale(0);
+        max-width: 100%;
+        overflow: hidden;
+        // animation: 750ms ease 200ms 1 normal both running apparition;
+
+
+       
+
 
         @media screen and (min-width: 860px) {
           width: 42vw;
@@ -144,38 +169,87 @@
               transition-duration: .8s;
               width: 25px;
             }
+            
+           
             @keyframes check {
               0% {
                 width: 0;
                 opacity: 0;
               }
               100% {
-                width: 65px;
+                width: 60px;
                 opacity: 1;
               }
             }
            
           }
+          .menus__all__plats .menus__all__card:nth-child(2){
+            animation-delay: .1s;
+            background: greenyellow;
+          }
+          .menus__all__card:nth-child(3){
+            animation-delay: .2s;
+          }
+          .menus__all__card:nth-child(4){
+            animation-delay: .3s;
+          }
+          .menus__all__card:nth-child(5){
+            animation-delay: .4s;
+          }
+          .menus__all__card:nth-child(6){
+            animation-delay: .5s;
+          }
+          .menus__all__card:nth-child(7){
+            animation-delay: .6s;
+          }
+          .menus__all__card:nth-child(8){
+            animation-delay: .7s;
+          }
+          // .del1 {
+          //   animation-delay: .1s;
+          // }
+          // .del2 {
+          //   animation-delay: .2s;
+          // }
+          // .del3 {
+          //   animation-delay: .3s;
+          // }
+          // .del4 {
+          //   animation-delay: .4s;
+          // }
+          // .del5 {
+          //   animation-delay: .5s;
+          // }
+          // .del6 {
+          //   animation-delay: .6s;
+          // }
+          // .del7 {
+          //   animation-delay: .7s;
+          // }
+          // .del8 {
+          //   animation-delay: .8s;
+          // }
+        
           @keyframes apparition {
-            // 0% {
-            // transform: scale(0);
-            // opacity: 0;
-            // }
-            // 50% {
-            //   opacity: 0%;
-            // }
-            // 100% {
-            //   transform: scale(1);
-            //   opacity: 100%;
-            // }
             0% {
-              transform: translateY(30px);
-              opacity: 0;
+            transform: scale(0);
+            opacity: 0;
+            }
+            50% {
+              opacity: 0%;
             }
             100% {
-              transform: translateY(0px);
-              opacity: 1;
+              transform: scale(1);
+              opacity: 100%;
             }
+            // 0% {
+            //   transform: translateY(30px);
+            //   opacity: 0;
+            // }
+            // 100% {
+            //   transform: translateY(0px);
+            //   opacity: 1;
+            // }
           }
       } 
     }
