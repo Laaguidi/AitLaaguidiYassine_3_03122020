@@ -189,6 +189,10 @@ p {
   .explore .explore__btn {
     font-size: 20px;
   }
+  .explore .explore__btn:hover {
+    opacity: 0.85;
+    box-shadow: 2px 2px 2px 2px darkgrey;
+  }
 }
 
 /** fonctionnememnt **/
@@ -1114,6 +1118,10 @@ p {
   padding: 17px 51px;
   border-radius: 35px;
   background: linear-gradient(to top left, #9356DC, #FF79DA);
+}
+.commande__btn p:hover {
+  opacity: 0.85;
+  box-shadow: 2px 2px 2px 2px darkgrey;
 }
 
 /* footer */

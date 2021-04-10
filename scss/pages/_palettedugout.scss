@@ -262,8 +262,8 @@
     justify-content: center;
     align-items: center;
     text-decoration: none;
-
-    p {
+  
+      p {
       margin-top: 32px;
       font-family: 'roboto', sans-serif;
       cursor: pointer;
@@ -271,7 +271,11 @@
       color: white;
       padding: 17px 51px;
       border-radius: 35px;
-      background: linear-gradient(to top left, #9356DC, #FF79DA)
+      background: linear-gradient(to top left, #9356DC, #FF79DA);
+      &:hover {
+        opacity: 0.85;
+        box-shadow: 2px 2px 2px 2px darkgrey;
+      }
     }
    }
 

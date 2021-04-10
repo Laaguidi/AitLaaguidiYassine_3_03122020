@@ -132,29 +132,15 @@
             font-size: 22px;
           }
       }
-      // .explore__reservez__p__responsive {
-      //   display: none;
-      // }
-      // @media screen and (min-width: 660px) {
-      //   display: flex;
-      //   justify-content: center;
-     
-      // }
-
+  
         .explore__btn {
           @include btnHome();
-          // margin-top: 32px;
-          // font-family: 'roboto', sans-serif;
-          // cursor: pointer;
-          // font-size: 1rem;
-          // padding: .25em 1em;
-          // color: white;
-          // padding: 17px 25px;
-          // border-radius: 35px;
-          // background: linear-gradient(to top left, #9356DC, #FF79DA);
-          // text-decoration: none;
           @media screen and (min-width: 550px) {
             font-size: 20px;
+            &:hover {
+              opacity: 0.85;
+              box-shadow: 2px 2px 2px 2px darkgrey;
+            }
           }
             }
         }
