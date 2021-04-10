@@ -172,7 +172,6 @@
     text-decoration: none;
     @include simpleFlex();
     padding-top: 32px;
-    // max-width: 450px; 
    
     @media screen and (min-width: 550px) {
       font-size: 20px;
@@ -188,9 +187,12 @@
       border-radius: 20px;
       box-shadow: 6px 7px 8px rgb(233 231 231);
       position: relative;
-    //  :hover {
-    //     background: #7952a8;
-    //   } 
+      &:hover {
+        background: #F5EDFF;
+        .fonctionnement__mobile__icon {
+          color: $store;
+        }
+       } 
 
       .fonctionnement__numero {
         background: $numbers;
@@ -215,15 +217,7 @@
           color: black;
           padding-right: 18px;
         }
-        
   }
-      .active {
-         background: #F5EDFF;
-   
-         .store {
-           color: $store;
-         }
-       }
             // fonctionnement choice
             @media screen and (min-width: 550px) {
              margin: 20px 20px;
@@ -241,7 +235,7 @@
 
 .restaurants {
   width: 100%;
-  height: auto; /* 1255px*/
+  height: auto; 
   background: $backgroundGrey;
   margin-top: 73px;
   padding-bottom: 60px;
@@ -269,7 +263,7 @@
       flex-direction: column;
       background: white;
       border-radius: 15px;
-      height: auto;  /* 253px */
+      height: auto;  
       box-shadow: 3px 3px 8px 4px rgb(233 231 231);
       margin-bottom: 3vw;
      
@@ -309,7 +303,6 @@
             line-height: 24px;
             position: relative;
             display: flex;
-            // justify-content: center;
             align-items: center;
             justify-content: space-between;
 
@@ -346,9 +339,6 @@
              width: 490PX;
              margin: 20px;
            }  
-          //  @media screen and (min-width: 1038px) {
-          //    margin: 10px;
-          //  } 
      }
      // all cards
      @media screen and (min-width: 550px) {
@@ -357,10 +347,6 @@
     }
     
    }
-  
-  // @media screen and (min-width: 1077px) {
-  //   max-height: 735px;
-  // }
   
 }
 // footer 
