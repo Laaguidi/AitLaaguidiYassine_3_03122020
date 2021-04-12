@@ -1001,34 +1001,47 @@ p {
   padding-top: 16px;
 }
 .menus .menus__all .menus__all__card {
+  cursor: pointer;
   background: #fff;
   border-radius: 15px;
-  padding: 12px;
   margin: 20px 0;
   display: flex;
   box-shadow: 5px 5px 5px #e9e7e7;
   justify-content: space-between;
   animation: apparition 0.5s linear;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
   max-width: 100%;
   overflow: hidden;
 }
 .menus .menus__all .menus__all__card:hover .menus__all__card__check {
+  width: 0;
   background-color: #99E2D0;
   border-radius: 0 15px 15px 0;
-  animation: width_opacity 0.6s both;
+  animation: width 0.6s both;
 }
 .menus .menus__all .menus__all__card:hover .menus__all__card__check i {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
   opacity: 1;
   border-radius: 50%;
   background-color: white;
   color: #99E2D0;
   padding: 5px;
   animation: check 0.6s both;
+}
+.menus .menus__all .menus__all__card .menus__all__card:nth-child(1) {
+  animation: apparition 0.5s backwards;
+}
+.menus .menus__all .menus__all__card .menus__all__card:nth-child(2) {
+  animation: apparition 1s backwards;
+}
+.menus .menus__all .menus__all__card .menus__all__card:nth-child(3) {
+  animation: apparition 1.5s backwards;
+}
+.menus .menus__all .menus__all__card .menus__all__card:nth-child(4) {
+  animation: oapparition 2s backwards;
 }
 @media screen and (min-width: 860px) {
   .menus .menus__all .menus__all__card {
@@ -1057,42 +1070,17 @@ p {
 .menus .menus__all .menus__all__card .menus__all__card__check i {
   overflow: hidden;
 }
-.menus .menus__all .menus__all__card .menus__all__plats .menus__all__card:nth-child(2) {
-  animation-delay: 0.1s;
-  background: greenyellow;
-}
-.menus .menus__all .menus__all__card .menus__all__card:nth-child(3) {
-  animation-delay: 0.2s;
-}
-.menus .menus__all .menus__all__card .menus__all__card:nth-child(4) {
-  animation-delay: 0.3s;
-}
-.menus .menus__all .menus__all__card .menus__all__card:nth-child(5) {
-  animation-delay: 0.4s;
-}
-.menus .menus__all .menus__all__card .menus__all__card:nth-child(6) {
-  animation-delay: 0.5s;
-}
-.menus .menus__all .menus__all__card .menus__all__card:nth-child(7) {
-  animation-delay: 0.6s;
-}
-.menus .menus__all .menus__all__card .menus__all__card:nth-child(8) {
-  animation-delay: 0.7s;
-}
 @keyframes apparition {
-  0% {
-    transform: scale(0);
+  from {
+    margin-bottom: 30px;
     opacity: 0;
   }
-  50% {
-    opacity: 0%;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 100%;
+  to {
+    margin-bottom: 15px;
+    opacity: 1;
   }
 }
-@keyframes width_opacity {
+@keyframes width {
   from {
     width: 0;
     opacity: 0;

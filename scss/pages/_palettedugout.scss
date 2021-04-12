@@ -110,29 +110,32 @@
        }
 
       .menus__all__card {
+        cursor: pointer;
         background: #fff;
         border-radius: 15px;
-        padding: 12px;
+        //padding: 12px;
         margin: 20px 0;
         display: flex;
         box-shadow: 5px 5px 5px rgb(233, 231, 231);
         justify-content: space-between;
         animation: apparition .5s linear;
-        animation-timing-function: ease-in-out;
-        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+        //animation-fill-mode: forwards;
         //transform: scale(0);
         max-width: 100%;
         overflow: hidden;
         // animation: 750ms ease 200ms 1 normal both running apparition;
         &:hover {
           .menus__all__card__check {
+            width: 0;
             background-color: #99E2D0;
             border-radius: 0 15px 15px 0;
-            animation: width_opacity 0.6s both;
+            animation: width 0.6s both;
             i {
               display: flex;
               justify-content: center;
               align-items: center;
+              overflow: hidden;
               opacity: 1;
               border-radius: 50%;
               background-color: white;
@@ -141,6 +144,20 @@
               animation: check 0.6s both;
             }
           } 
+      
+        }
+        
+        .menus__all__card:nth-child(1){
+          animation: apparition .5s backwards, //margin_bottom .5s backwards;
+        }
+        .menus__all__card:nth-child(2){
+          animation: apparition 1s backwards, //margin_bottom 1s backwards;
+        }
+        .menus__all__card:nth-child(3){
+          animation: apparition 1.5s backwards, //margin_bottom 1.5s backwards;
+        }
+        .menus__all__card:nth-child(4){
+          animation: oapparition 2s backwards, //margin_bottom 2s backwards;
         }
 
        
@@ -166,89 +183,38 @@
             text-decoration: none;
           }
           .menus__all__card__check {
-            //height: 75px;
             width: 0;
             display: flex;
             justify-content: center;
             align-items: center;
-            // align-items: center;
-            //background-color: #99E2D0;
-            // display: flex;
-            // justify-content: center;
-            // margin: -16px -120px -16px 16px;
-            // transition-duration: .5s;
-            // width: 104px;
-            // animation: check;
-            //height: 75px;
-           
-            // width: 0;
-            // display: flex;
-            // justify-content: center;
-            // align-items: center;
-            // border-radius: 0 15px 15px 0;
-            // animation: width_opacity 0.6s both;
-            
-            // .menus__all__card__check--icon {
-            //   display: flex;
-            //   justify-content: center;
-            //   align-items: center;
-            //   background-color: white;
-            //   border-radius: 100px;
-            //   color: #99E2D0;
-            //   height: 25px;
-            //   transform: rotate(180deg);
-            //   transition-duration: .8s;
-            //   width: 25px;
-            // }
+        
             i {
               overflow: hidden;
-              // overflow: hidden;
-              // display: flex;
-              // justify-content: center;
-              // align-items: center;
-              // opacity: 1;
-              // border-radius: 50%;
-              // background-color: white;
-              // color: #99E2D0;
-              // padding: 5px;
-              // animation: check 0.6s both;
             }
-            
-           
-            // @keyframes check {
-            //   0% {
-            //     width: 0;
-            //     opacity: 0;
-            //   }
-            //   100% {
-            //     width: 60px;
-            //     opacity: 1;
-            //   }
-            // }
            
           }
-          .menus__all__plats .menus__all__card:nth-child(2){
-            animation-delay: .1s;
-            background: greenyellow;
-          }
-          .menus__all__card:nth-child(3){
-            animation-delay: .2s;
-          }
-          .menus__all__card:nth-child(4){
-            animation-delay: .3s;
-          }
-          .menus__all__card:nth-child(5){
-            animation-delay: .4s;
-          }
-          .menus__all__card:nth-child(6){
-            animation-delay: .5s;
-          }
-          .menus__all__card:nth-child(7){
-            animation-delay: .6s;
-          }
-          .menus__all__card:nth-child(8){
-            animation-delay: .7s;
-          }
+       
+          // .menus__all__card:nth-child(1){
+          //   animation-delay: .1s;
+          // }
+          // .menus__all__card:nth-child(2){
+          //   animation-delay: .2s;
+          // }
+          // .menus__all__card:nth-child(3){
+          //   animation-delay: .3s;
+          // }
+          // .menus__all__card:nth-child(4){
+          //   animation-delay: .4s;
+          // }
+          // .menus__all__card:nth-child(6){
+          //   animation-delay: .5s;
+          // }
+          // .menus__all__card:nth-child(7){
+          //   animation-delay: .6s;
+          // }
+          // .menus__all__card:nth-child(8){
+          //   animation-delay: .7s;
+          // }
           // .del1 {
           //   animation-delay: .1s;
           // }
@@ -274,28 +240,41 @@
           //   animation-delay: .8s;
           // }
         
-          @keyframes apparition {
-            0% {
-            transform: scale(0);
-            opacity: 0;
+          // @keyframes apparition {
+          //   0% {
+          //   transform: scale(0);
+          //   opacity: 0;
+          //   }
+          //   50% {
+          //     opacity: 0%;
+          //   }
+          //   100% {
+          //     transform: scale(1);
+          //     opacity: 100%;
+          //   }
+          
+          // }
+        //   @keyframes opacity_menu{   
+        //     from{
+        //         opacity: 0;
+        //     }
+        //     to{
+        //         opacity: 1;
+        //     }
+        
+        // }
+        @keyframes apparition {
+            from{
+                margin-bottom: 30px;
+                opacity: 0;
             }
-            50% {
-              opacity: 0%;
+            to{
+                margin-bottom: 15px;
+                opacity: 1;
             }
-            100% {
-              transform: scale(1);
-              opacity: 100%;
-            }
-            // 0% {
-            //   transform: translateY(30px);
-            //   opacity: 0;
-            // }
-            // 100% {
-            //   transform: translateY(0px);
-            //   opacity: 1;
-            // }
-          }
-          @keyframes width_opacity{
+        }
+
+          @keyframes width{
             from{
                 width: 0;
                 opacity: 0;
