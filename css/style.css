@@ -1004,13 +1004,12 @@ p {
   cursor: pointer;
   background: #fff;
   border-radius: 15px;
+  padding: 12px;
   margin: 20px 0;
   display: flex;
   box-shadow: 5px 5px 5px #e9e7e7;
   justify-content: space-between;
-  animation: apparition 0.5s linear;
-  animation-timing-function: ease-in;
-  max-width: 100%;
+  animation-timing-function: ease-in-out;
   overflow: hidden;
 }
 .menus .menus__all .menus__all__card:hover .menus__all__card__check {
@@ -1032,16 +1031,16 @@ p {
   animation: check 0.6s both;
 }
 .menus .menus__all .menus__all__card .menus__all__card:nth-child(1) {
-  animation: apparition 0.5s backwards;
+  animation: apparition 0.5s forwards;
 }
 .menus .menus__all .menus__all__card .menus__all__card:nth-child(2) {
-  animation: apparition 1s backwards;
+  animation: apparition 0.5s forwards;
 }
 .menus .menus__all .menus__all__card .menus__all__card:nth-child(3) {
-  animation: apparition 1.5s backwards;
+  animation: apparition 1.5s forwards;
 }
 .menus .menus__all .menus__all__card .menus__all__card:nth-child(4) {
-  animation: oapparition 2s backwards;
+  animation: apparition 2s forwards;
 }
 @media screen and (min-width: 860px) {
   .menus .menus__all .menus__all__card {
