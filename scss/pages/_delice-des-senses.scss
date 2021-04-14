@@ -86,7 +86,7 @@
       .menus__all__card {
         background: #fff;
         border-radius: 15px;
-        padding: 12px;
+        //padding: 12px;
         margin: 20px 0;
         display: flex;
         box-shadow: 5px 5px 5px rgb(233, 231, 231);
@@ -95,6 +95,7 @@
 
           .menus__all__card__description {
             width: 100%;
+            padding: 12px;
 
              p {
               font-size: 1rem;
@@ -105,13 +106,9 @@
           .menus__all__card__prix {
             font-weight: bold;
             padding-top: 1.12em;
+            padding-right: 12px;
           }
 
-          .menus__all__card__prix--active {
-            position: relative;
-            top: 38px;
-            font-weight: bold;
-          }
           @keyframes apparition {
             0% {
               transform: translateY(30px);
