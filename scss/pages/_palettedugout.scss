@@ -94,6 +94,7 @@
 
     .menus__all {
       padding: 0 10px;
+ 
       @media screen and (min-width: 860px) {
         display: flex;
         justify-content: space-around;
@@ -118,8 +119,8 @@
         display: flex;
         box-shadow: 5px 5px 5px rgb(233, 231, 231);
         justify-content: space-between;
-        //animation: apparition .5s linear;
-        animation-timing-function: ease-in-out;
+        animation: apparition .5s linear;
+        //animation-timing-function: ease-in-out;
         //animation-fill-mode: forwards;
         //max-width: 100%;
         overflow: hidden;
@@ -145,19 +146,19 @@
           } 
       
         }
-        
-        .menus__all__card:nth-child(1){
-          animation: apparition .5s forwards;
-        }
-        .menus__all__card:nth-child(2){
-          animation: apparition .5s forwards; 
-        }
-        .menus__all__card:nth-child(3){
-          animation: apparition 1.5s forwards; 
-        }
-        .menus__all__card:nth-child(4){
-          animation: apparition 2s forwards; 
-        }
+      //   &:nth-child(1){
+      //     animation: apparition .5s ease-in-out forwards;
+      //     background: #99E2D0;
+      //   }
+      //   &:nth-child(2){
+      //     animation: apparition 1s ease-in-out forwards; 
+      //   }
+      //  &:nth-child(3){
+      //     animation: apparition 1.5s ease-in-out forwards; 
+      //   }
+      //  &:nth-child(4){
+      //     animation: apparition 2s ease-in-out forwards; 
+      //   }
         // menu all card
         @media screen and (min-width: 860px) {
           width: 42vw;
