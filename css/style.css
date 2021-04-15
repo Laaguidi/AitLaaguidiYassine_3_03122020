@@ -1022,8 +1022,7 @@ p {
   overflow: hidden;
   opacity: 1;
   border-radius: 50%;
-  background-color: white;
-  color: #99E2D0;
+  color: white;
   animation: check 0.6s both;
 }
 .menus .menus__all .menus__all__card:nth-child(1) {
