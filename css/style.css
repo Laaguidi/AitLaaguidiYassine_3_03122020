@@ -1061,7 +1061,8 @@ p {
 }
 .menus .menus__all .menus__all__card .menus__all__card__description {
   width: 100%;
-  padding: 12px;
+  padding: 17px;
+  text-overflow: ellipsis;
 }
 .menus .menus__all .menus__all__card .menus__all__card__description p {
   font-size: 1rem;
@@ -1069,7 +1070,7 @@ p {
 }
 .menus .menus__all .menus__all__card .menus__all__card__prix {
   font-weight: bold;
-  padding-top: 1.12em;
+  padding-top: 1.9em;
   color: black;
   text-decoration: none;
   padding-right: 12px;
@@ -1082,6 +1083,7 @@ p {
 }
 .menus .menus__all .menus__all__card .menus__all__card__check i {
   overflow: hidden;
+  font-size: 26px;
 }
 @keyframes apparition {
   from {
