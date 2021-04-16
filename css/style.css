@@ -1061,11 +1061,18 @@ p {
 .menus .menus__all .menus__all__card .menus__all__card__description {
   width: 100%;
   padding: 17px;
+  flex: 1;
+  overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .menus .menus__all .menus__all__card .menus__all__card__description p {
   font-size: 1rem;
   color: #7D7D7D;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .menus .menus__all .menus__all__card .menus__all__card__prix {
   font-weight: bold;
