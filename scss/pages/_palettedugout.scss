@@ -3,9 +3,7 @@
   .header {
     width: 100%;
     height: 8vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexCenter();
 
     a {
       text-decoration: none;
@@ -31,26 +29,24 @@
   /* container header */
 
   .menu {
-    background: #F6F6F6;
+    background: $backgroundGrey;
     width: 100%;
-    height: auto;  /*1185px */
+    height: auto;  
     position: relative;
     border-radius: 47px 47px 0 0;
     margin-top: -42px;
     padding-bottom: 80px;
 
     .menu__header {
-      font-family: 'Shrikhand', cursive;
+      font-family: $fontTitle;
       font-size: 1.2rem;
       padding-top: 40px; 
-      display: flex;
-      justify-content: center;
-      align-items: center;
+     @include flexCenter();
 
       h2 {
         position: absolute;
         left: 20px; 
-        font-family: 'shrikhand', cursive;
+        font-family: $fontTitle;
       }
 
       .menu__icon {
@@ -60,7 +56,7 @@
          i {
           font-size: 1.53em;
           &:hover {
-             background: linear-gradient(to top left, #9356DC, #FF79DA);
+             background: linear-gradient(to top left, $numbers, $pink);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             font-weight: bold;
@@ -103,7 +99,7 @@
        .menus__all__title {
         margin-left: 4px;
         margin-bottom: 23px;
-        border-bottom: 3px solid #99E2D0;
+        border-bottom: 3px solid $sousTitreBorder;
         color: #8B8B8B;
         width: 2.5rem;
         position: relative;
@@ -120,9 +116,6 @@
         box-shadow: 5px 5px 5px rgb(233, 231, 231);
         justify-content: space-between;
         animation: apparition .5s linear;
-        //animation-timing-function: ease-in-out;
-        //animation-fill-mode: forwards;
-        //max-width: 100%;
         overflow: hidden;
         // animation: 750ms ease 200ms 1 normal both running apparition;
         &:hover {
@@ -132,15 +125,11 @@
             border-radius: 0 15px 15px 0;
             animation: width 0.6s both;
             i {
-              display: flex;
-              justify-content: center;
-              align-items: center;
+              @include flexCenter();
               overflow: hidden;
               opacity: 1;
               border-radius: 50%;
-              //background-color: #99E2D0;
               color: white;
-              //padding: 5px;
               animation: check 0.6s both;
             }
           } 
@@ -148,7 +137,7 @@
         }
         &:nth-child(1){
           animation: apparition .5s ease-in forwards;
-          background: #99E2D0;
+          
         }
         &:nth-child(2){
           animation: apparition 1s ease-in forwards; 
@@ -190,7 +179,7 @@
 
              p {
               font-size: 1rem;
-              color: #7D7D7D;
+              color: $paragraphColor;
               flex: 1;
               overflow: hidden;
               text-overflow: ellipsis;
@@ -208,9 +197,7 @@
           }
           .menus__all__card__check {
             width: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flexCenter();
         
             i {
               overflow: hidden;
@@ -257,9 +244,7 @@
    /* commande btn */
 
    .commande__btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexCenter();
     text-decoration: none;
   
       p {
@@ -270,7 +255,7 @@
       color: white;
       padding: 17px 51px;
       border-radius: 35px;
-      background: linear-gradient(to top left, #9356DC, #FF79DA);
+      background: linear-gradient(to top left, $numbers, $pink);
       &:hover {
         opacity: 0.85;
         box-shadow: 2px 2px 2px 2px darkgrey;
@@ -292,7 +277,7 @@
       .footer__logo {
         color: white;
         font-size: 1.25rem;
-        font-family: shrikhand, "cursive";
+        font-family: $fontTitle;
         margin: 0 0 1rem;
       }
 

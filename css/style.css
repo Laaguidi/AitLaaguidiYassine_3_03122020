@@ -452,159 +452,6 @@ p {
   height: 245px;
   background-size: cover;
   background-position-x: center;
-}
-
-/* container header */
-.menu {
-  background: #F6F6F6;
-  width: 100%;
-  height: 1185px;
-  position: relative;
-  border-radius: 47px 47px 0 0;
-  margin-top: -42px;
-}
-.menu .menu__header {
-  font-family: "Shrikhand", cursive;
-  font-size: 1.2rem;
-  padding-top: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.menu .menu__header h2 {
-  position: absolute;
-  left: 20px;
-  font-family: "shrikhand", cursive;
-}
-.menu .menu__header .menu__icon {
-  position: absolute;
-  right: 1.93em;
-}
-.menu .menu__header .menu__icon .far {
-  font-size: 1.53em;
-}
-
-/* menu */
-.menus {
-  padding-top: 2.75em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.menus .menus__all {
-  padding: 0 10px;
-}
-.menus .menus__all .menus__all__title {
-  margin-left: 4px;
-  margin-bottom: 23px;
-  border-bottom: 3px solid #99E2D0;
-  color: #8B8B8B;
-  width: 2.5rem;
-  position: relative;
-  padding-top: 16px;
-}
-.menus .menus__all .menus__all__card {
-  background: #fff;
-  border-radius: 15px;
-  margin: 20px 0;
-  display: flex;
-  box-shadow: 5px 5px 5px #e9e7e7;
-  justify-content: space-between;
-  animation: 750ms ease 200ms 1 normal both running apparition;
-}
-.menus .menus__all .menus__all__card .menus__all__card__description {
-  width: 100%;
-  padding: 12px;
-}
-.menus .menus__all .menus__all__card .menus__all__card__description p {
-  font-size: 1rem;
-  color: #7D7D7D;
-}
-.menus .menus__all .menus__all__card .menus__all__card__prix {
-  font-weight: bold;
-  padding-top: 1.12em;
-  padding-right: 12px;
-}
-@keyframes apparition {
-  0% {
-    transform: translateY(30px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0px);
-    opacity: 1;
-  }
-}
-
-/* commande btn */
-.commande__btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-}
-.commande__btn p {
-  margin-top: 32px;
-  font-family: "roboto", sans-serif;
-  cursor: pointer;
-  font-size: 1rem;
-  color: white;
-  padding: 17px 51px;
-  border-radius: 35px;
-  background: linear-gradient(to top left, #9356DC, #FF79DA);
-}
-
-/* footer */
-.footer {
-  background: #353535;
-  height: 215px;
-}
-.footer .footer__container {
-  padding: 1.4em;
-  display: flex;
-  flex-direction: column;
-}
-.footer .footer__container .footer__logo {
-  color: white;
-  font-size: 1.25rem;
-  font-family: shrikhand, "cursive";
-  margin: 0 0 1rem;
-}
-.footer .footer__container .footer__list {
-  font-size: 0.9em;
-  display: flex;
-  flex-direction: column;
-  line-height: 1.5em;
-  list-style-type: none;
-}
-.footer .footer__container .footer__list .footer__icon {
-  color: white;
-  margin-right: 0.75rem;
-}
-
-/* header */
-.header {
-  width: 100%;
-  height: 8vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.header a {
-  color: black;
-}
-.header a .header__arrow {
-  position: absolute;
-  left: 22px;
-  font-size: 20px;
-  top: 20px;
-}
-
-.img__restaurant {
-  width: 100%;
-  height: 245px;
-  background-size: cover;
-  background-position-x: center;
   object-fit: cover;
 }
 
@@ -618,7 +465,7 @@ p {
   margin-top: -42px;
 }
 .menu .menu__header {
-  font-family: "Shrikhand", cursive;
+  font-family: shrikhand, "cursive";
   font-size: 1.2rem;
   padding-top: 40px;
   display: flex;
@@ -628,7 +475,7 @@ p {
 .menu .menu__header h2 {
   position: absolute;
   left: 20px;
-  font-family: "shrikhand", cursive;
+  font-family: shrikhand, "cursive";
 }
 .menu .menu__header .menu__icon {
   position: absolute;
@@ -759,24 +606,24 @@ p {
 }
 
 .img__restaurant {
-  background-image: url("../images/ala-francaise.jpg");
   width: 100%;
   height: 245px;
   background-size: cover;
   background-position-x: center;
+  object-fit: cover;
 }
 
 /* container header */
 .menu {
   background: #F6F6F6;
   width: 100%;
-  height: 1185px;
+  height: 1249px;
   position: relative;
   border-radius: 47px 47px 0 0;
   margin-top: -42px;
 }
 .menu .menu__header {
-  font-family: "Shrikhand", cursive;
+  font-family: shrikhand, "cursive";
   font-size: 1.2rem;
   padding-top: 40px;
   display: flex;
@@ -786,7 +633,7 @@ p {
 .menu .menu__header h2 {
   position: absolute;
   left: 20px;
-  font-family: "shrikhand", cursive;
+  font-family: shrikhand, "cursive";
 }
 .menu .menu__header .menu__icon {
   position: absolute;
@@ -866,6 +713,168 @@ p {
   background: linear-gradient(to top left, #9356DC, #FF79DA);
 }
 
+.marge {
+  margin-top: 4px;
+}
+
+/* footer */
+.footer {
+  background: #353535;
+  height: 215px;
+}
+.footer .footer__container {
+  padding: 1.4em;
+  display: flex;
+  flex-direction: column;
+}
+.footer .footer__container .footer__logo {
+  color: white;
+  font-size: 1.25rem;
+  font-family: shrikhand, "cursive";
+  margin: 0 0 1rem;
+}
+.footer .footer__container .footer__list {
+  font-size: 0.9em;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5em;
+  list-style-type: none;
+}
+.footer .footer__container .footer__list .footer__icon {
+  color: white;
+  margin-right: 0.75rem;
+}
+
+/* header */
+.header {
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header a {
+  color: black;
+}
+.header a .header__arrow {
+  position: absolute;
+  left: 22px;
+  font-size: 20px;
+  top: 20px;
+}
+
+.img__restaurant {
+  width: 100%;
+  height: 245px;
+  background-size: cover;
+  background-position-x: center;
+  object-fit: cover;
+}
+
+/* container header */
+.menu {
+  background: #F6F6F6;
+  width: 100%;
+  height: 1249px;
+  position: relative;
+  border-radius: 47px 47px 0 0;
+  margin-top: -42px;
+}
+.menu .menu__header {
+  font-family: shrikhand, "cursive";
+  font-size: 1.2rem;
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu .menu__header h2 {
+  position: absolute;
+  left: 20px;
+  font-family: shrikhand, "cursive";
+}
+.menu .menu__header .menu__icon {
+  position: absolute;
+  right: 1.93em;
+}
+.menu .menu__header .menu__icon .far {
+  font-size: 1.53em;
+}
+
+/* menu */
+.menus {
+  padding-top: 2.75em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.menus .menus__all {
+  padding: 0 10px;
+}
+.menus .menus__all .menus__all__title {
+  margin-left: 4px;
+  margin-bottom: 23px;
+  border-bottom: 3px solid #99E2D0;
+  color: #8B8B8B;
+  width: 2.5rem;
+  position: relative;
+  padding-top: 16px;
+}
+.menus .menus__all .menus__all__card {
+  background: #fff;
+  border-radius: 15px;
+  margin: 20px 0;
+  display: flex;
+  box-shadow: 5px 5px 5px #e9e7e7;
+  justify-content: space-between;
+  animation: 750ms ease 200ms 1 normal both running apparition;
+}
+.menus .menus__all .menus__all__card .menus__all__card__description {
+  width: 100%;
+  padding: 12px;
+}
+.menus .menus__all .menus__all__card .menus__all__card__description p {
+  font-size: 1rem;
+  color: #7D7D7D;
+}
+.menus .menus__all .menus__all__card .menus__all__card__prix {
+  font-weight: bold;
+  padding-top: 1.12em;
+  padding-right: 12px;
+}
+@keyframes apparition {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+/* commande btn */
+.commande__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.commande__btn p {
+  margin-top: 32px;
+  font-family: "roboto", sans-serif;
+  cursor: pointer;
+  font-size: 1rem;
+  color: white;
+  padding: 17px 51px;
+  border-radius: 35px;
+  background: linear-gradient(to top left, #9356DC, #FF79DA);
+}
+
+.marge {
+  margin-top: 4px;
+}
+
 /* footer */
 .footer {
   background: #353535;
@@ -926,14 +935,13 @@ p {
   background: #F6F6F6;
   width: 100%;
   height: auto;
-  /*1185px */
   position: relative;
   border-radius: 47px 47px 0 0;
   margin-top: -42px;
   padding-bottom: 80px;
 }
 .menu .menu__header {
-  font-family: "Shrikhand", cursive;
+  font-family: shrikhand, "cursive";
   font-size: 1.2rem;
   padding-top: 40px;
   display: flex;
@@ -943,7 +951,7 @@ p {
 .menu .menu__header h2 {
   position: absolute;
   left: 20px;
-  font-family: "shrikhand", cursive;
+  font-family: shrikhand, "cursive";
 }
 .menu .menu__header .menu__icon {
   position: absolute;
@@ -1027,7 +1035,6 @@ p {
 }
 .menus .menus__all .menus__all__card:nth-child(1) {
   animation: apparition 0.5s ease-in forwards;
-  background: #99E2D0;
 }
 .menus .menus__all .menus__all__card:nth-child(2) {
   animation: apparition 1s ease-in forwards;
