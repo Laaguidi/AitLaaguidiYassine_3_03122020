@@ -54,8 +54,8 @@ p {
   justify-content: center;
   align-items: center;
   border: 10px solid transparent;
-  border-top: 10px solid #9356DC;
-  border-bottom: 10px solid #FF79DA;
+  border-top: 15px solid #9356DC;
+  border-bottom: 15px solid #FF79DA;
   border-radius: 50%;
   width: 100px;
   height: 100px;
@@ -71,8 +71,8 @@ p {
 }
 
 .loader__center {
-  width: 15px;
-  height: 15px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   background-color: #99E2D0;
 }
@@ -118,7 +118,6 @@ p {
   width: 100%;
   height: 52px;
   background: #EAEAEA;
-  /* #EAEAEA */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -891,7 +890,6 @@ p {
 }
 
 .img__restaurant {
-  background-image: url("../images/ala-francaise.jpg");
   width: 100%;
   height: 245px;
   background-size: cover;
