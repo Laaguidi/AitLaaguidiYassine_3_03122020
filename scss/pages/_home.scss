@@ -1,64 +1,138 @@
-.loader {
-  animation: loader 0.1s linear;
-  animation-delay: 1.10s;
-  animation-fill-mode: both;
-  align-items: center;
-  background: #f6f6f6;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  z-index: 10000;
-  height: 100%;
-  left: 0;
-  top: 0;
-  position: fixed;
+// .loader {
+//   animation: loader 0.1s linear;
+//   animation-delay: 1.10s;
+//   animation-fill-mode: both;
+//   align-items: center;
+//   background: #f6f6f6;
+//   display: flex;
+//   justify-content: center;
+//   width: 100%;
+//   z-index: 10000;
+//   height: 100%;
+//   left: 0;
+//   top: 0;
+//   position: fixed;
 
-  .loader__itemcontainer {
-    display: flex;
-    justify-content: space-between;
-    width: 200px;
+//   .loader__itemcontainer {
+//     display: flex;
+//     justify-content: space-between;
+//     width: 200px;
 
-    .loader__item {
-      animation-iteration-count: 1;
-      animation: loader .6s;
-      width: 40px;
-      height: 40px;
-      border-radius: 40px;
+//     .loader__item {
+//       animation-iteration-count: 1;
+//       animation: loader .6s;
+//       width: 40px;
+//       height: 40px;
+//       border-radius: 40px;
      
-    }
-    .loader__item--1 {
-      background-color: #9356DC;
-      //animation-delay: .0s;
-    }
-    .loader__item--2 {
-      background-color: $pink;
-      animation-delay: 0.1s;
-    }
-    .loader__item--3 {
-      background-color: #99E2D0;
-      animation-delay: 0.2s;
-    }
+//     }
+//     .loader__item--1 {
+//       background-color: #9356DC;
+//       //animation-delay: .0s;
+//     }
+//     .loader__item--2 {
+//       background-color: $pink;
+//       animation-delay: 0.1s;
+//     }
+//     .loader__item--3 {
+//       background-color: #99E2D0;
+//       animation-delay: 0.2s;
+//     }
   
-  }
- @keyframes loader {
-   0% {
+//   }
+//  @keyframes loader {
+//    0% {
    
-    transform: translateY(0);
-   }
-   25% {
+//     transform: translateY(0);
+//    }
+//    25% {
      
-     transform: translateY(0.5rem);
-   }
-   75% {
+//      transform: translateY(0.5rem);
+//    }
+//    75% {
      
-     transform: translateY(-0.5rem); 
-   }
-   100% {
-     transform: translateY(0rem);  
-     opacity: 0;
-     z-index: -10;
-   }
- }
+//      transform: translateY(-0.5rem); 
+//    }
+//    100% {
+//      transform: translateY(0rem);  
+//      opacity: 0;
+//      z-index: -10;
+//    }
+//  }
+// }
+
+.loader {
+  height: 100%;
+  background: white;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+  animation: loader 2s linear;
+  //animation: loader 2s linear;
+  visibility: hidden;
+}
+
+.loader__bordure {
+
+  display: flex;
+
+  justify-content: center;
+ 
+  align-items: center;
+  border: 10px solid transparent;
+  border-top: 10px solid #9356DC;
+  border-bottom: 10px solid #FF79DA;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  animation: loader-bordure 2s linear;
+  //animation: loader-bordure 2s linear;
+  z-index: 10;
+  visibility: hidden;
+}
+
+.loader__center {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #99E2D0;
+}
+@keyframes loader {
+  0% {
+    visibility: visible;
+    opacity: 0.9;
+  }
+  70% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes loader-bordure {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 /* header */
 
@@ -253,7 +327,7 @@
 
    .restaurants__allcards {
     padding-top: 3px;
-    display: flex;
+    //display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 20px;

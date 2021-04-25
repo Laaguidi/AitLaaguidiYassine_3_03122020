@@ -54,11 +54,11 @@ Interdit: Javascript / Frameworks CSS / Inline CSS
 
 ### Contraintes : 
 
-* Approche mobile-first: oui hhhhhh
+* Approche mobile-first
 * Maquette mobile : oui
-* Maquette desktop : à improviser
-* Validation W3C HTML : à passer, warning autorisés
-* Validation W3C CSS : à passer, warning autorisés
-* Compatibilité : Dernières versions de Chrome, Firefox & Safari
+* Maquette desktop à improviser
+* Validation W3C HTML à passer, warning autorisés
+* Validation W3C CSS à passer, warning autorisés
+* Compatibilité Dernières versions de Chrome, Firefox & Safari
 
 

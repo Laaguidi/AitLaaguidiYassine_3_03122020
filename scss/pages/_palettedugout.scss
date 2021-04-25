@@ -8,6 +8,7 @@
     a {
       text-decoration: none;
       color: black;
+     
 
       .header__arrow {
         position: absolute;
@@ -110,14 +111,13 @@
         cursor: pointer;
         background: #fff;
         border-radius: 15px;
-        //padding: 12px;
         margin: 20px 0;
         display: flex;
         box-shadow: 5px 5px 5px rgb(233, 231, 231);
         justify-content: space-between;
-        animation: apparition .5s linear;
+        //animation: apparition .5s linear;
         overflow: hidden;
-        // animation: 750ms ease 200ms 1 normal both running apparition;
+       
         &:hover {
           .menus__all__card__check {
             width: 0;
@@ -135,34 +135,34 @@
           } 
       
         }
-        &:nth-child(1){
-          animation: apparition .5s ease-in forwards;
+        // &:nth-child(1){
+        //   animation: apparition .5s ease-in forwards;  // .5s
           
-        }
-        &:nth-child(2){
-          animation: apparition 1s ease-in forwards; 
-        }
-       &:nth-child(3){
-          animation: apparition 1.2s ease-in forwards; 
-        }
-       &:nth-child(4){
-          animation: apparition 2s ease-in forwards; 
-        }
-       &:nth-child(5){
-          animation: apparition 2.5s ease-in forwards; 
-        }
-       &:nth-child(6){
-          animation: apparition 2.7s ease-in forwards; 
-        }
-       &:nth-child(7){
-          animation: apparition 3s ease-in forwards; 
-        }
-       &:nth-child(8){
-          animation: apparition 3.5s ease-in forwards; 
-        }
-       &:nth-child(9){
-          animation: apparition 4s ease-in forwards; 
-        }
+        // }
+        // &:nth-child(2){
+        //   animation: apparition 1s ease-in forwards;  // 1s
+        // }
+      //  &:nth-child(3){
+      //     animation: apparition 1.2s ease-in forwards; // 1.2s
+      //   }
+      //  &:nth-child(4){
+      //     animation: apparition 2s ease-in forwards;   // 2s
+      //   }
+      //  &:nth-child(5){
+      //     animation: apparition 2.5s ease-in forwards;  // 2.5s
+      //   }
+      //  &:nth-child(6){
+      //     animation: apparition 2.7s ease-in forwards;   // 2.7s
+      //   }
+      //  &:nth-child(7){
+      //     animation: apparition 3s ease-in forwards; // 3s
+      //   }
+      //  &:nth-child(8){
+      //     animation: apparition 4.5s ease-in forwards;  // 4.5s
+      //   }
+      //  &:nth-child(9){
+      //     animation: apparition 4s ease-in forwards;   // 4s
+      //   }
         // menu all card
         @media screen and (min-width: 860px) {
           width: 42vw;
@@ -206,16 +206,16 @@
            
           }
         // apparition
-        @keyframes apparition {
-            from{
-                margin-bottom: 30px;
-                opacity: 0;
-            }
-            to{
-                margin-bottom: 15px;
-                opacity: 1;
-            }
-        }
+        // @keyframes apparition {
+        //     from{
+        //         margin-bottom: 30px;
+        //         opacity: 0;
+        //     }
+        //     to{
+        //         margin-bottom: 15px;
+        //         opacity: 1;
+        //     }
+        // }
      
          // width
           @keyframes width{
@@ -262,6 +262,51 @@
       }
     }
    }
+   
+   // apearence animation
+   
+   .appearence{
+    animation: appearence 1s both;
+   } 
+   @keyframes appearence {
+     0% {
+       opacity: 0;
+     }
+     100% {
+       opacity: 1;
+     }
+   }
+
+   #card1 {
+    animation-delay: 0.1s;
+  }
+  #card2 {
+    animation-delay: 0.2s;
+  }
+  #card3 {
+    animation-delay: 0.3s;
+  }
+  #card4 {
+    animation-delay: 0.4s;
+  }
+  #card5 {
+    animation-delay: 0.5s;
+  }
+  #card6 {
+    animation-delay: 0.6s;
+  }
+  #card7 {
+    animation-delay: 0.7s;
+  }
+  #card8 {
+    animation-delay: 0.8s;
+  }
+  #card9 {
+    animation-delay: 0.9s;
+  }
+  #card10 {
+    animation-delay: 1s;
+  }
 
    /* footer */
 
