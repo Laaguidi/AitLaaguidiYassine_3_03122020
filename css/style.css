@@ -198,10 +198,7 @@ p {
   background: linear-gradient(to top left, #9356DC, #FF79DA);
   text-decoration: none;
 }
-@media screen and (min-width: 550px) {
-  .explore .explore__btn {
-    font-size: 20px;
-  }
+@media screen and (min-width: 316px) {
   .explore .explore__btn:hover {
     opacity: 0.85;
     box-shadow: 2px 2px 2px 2px darkgrey;
