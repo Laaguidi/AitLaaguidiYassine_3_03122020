@@ -129,6 +129,7 @@
               border-radius: 50%;
               color: white;
               animation: check 0.6s both;
+              //transform: rotate(180deg);
             }
           } 
       
@@ -169,7 +170,7 @@
           .menus__all__card__check {
             width: 0;
             @include flexCenter();
-        
+           
             i {
               overflow: hidden;
               font-size: 26px;
@@ -177,8 +178,8 @@
            
           }
      
-         // width
-          @keyframes width{
+         // check animation
+          @keyframes width {
             from{
                 width: 0;
                 opacity: 0;
@@ -188,13 +189,13 @@
                 opacity: 1;
             }
         }
-        //check
-        @keyframes check{
-            from{
-                transform: rotate(180deg);
-            }
-            to{
+       
+        @keyframes check {
+            0%{
                 transform: rotate(0);
+            }
+            100%{
+                transform: rotate(360deg);
             }
         }
       } 
